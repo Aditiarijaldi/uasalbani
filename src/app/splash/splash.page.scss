@@ -1,0 +1,36 @@
+ion-content {
+  --ion-background-color: #fdfdfd; /* Ganti dengan warna latar belakang yang diinginkan */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi tinggi konten hingga seluruh tinggi layar */
+    background-image: url('https://i.pinimg.com/originals/b2/35/7d/b2357d19807c32c8f1e29edefc8f0b9a.jpg'); /* Ganti 'link_gambar_anda.png' dengan URL gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(92, 92, 92, 0.1); /* Warna putih dengan tingkat transparansi 0.5 */
+  }
+
+  .scale-up-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      max-width: 300px; /* Sesuaikan ukuran gambar */
+      max-height: 300px; /* Sesuaikan ukuran gambar */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan: offset-x offset-y blur-radius color */
+    }
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

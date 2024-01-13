@@ -1,0 +1,65 @@
+.event {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 30px; /* Sesuaikan jarak antara ikon dan teks */
+  margin-bottom: 30px; /* Sesuaikan jarak antar entri */
+}
+
+.line {
+  position: absolute;
+  left: 12px; /* Sesuaikan posisi garis */
+  width: 2px; /* Sesuaikan lebar garis */
+  height: calc(100% - 10px); /* Sesuaikan tinggi garis */
+  background-color: #000; /* Sesuaikan warna garis */
+  z-index: -1; /* Letakkan garis di belakang konten */
+}
+
+.highlight-text {
+  background-color: #018f01; /* Warna hijau */
+  padding: 5px 10px; /* Padding untuk menjaga jarak teks dari tepi latar belakang */
+  border-radius: 5px; /* Membuat sudut latar belakang membulat */
+  color: white; /* Warna teks putih */
+}
+
+.highlight-text1 {
+  background-color: #fa0000; /* Warna hijau */
+  padding: 5px 10px; /* Padding untuk menjaga jarak teks dari tepi latar belakang */
+  border-radius: 5px; /* Membuat sudut latar belakang membulat */
+  color: white; /* Warna teks putih */
+}
+
+.entry-box {
+  border: 1px solid #ccc; /* Border kotak */
+  padding: 15px; /* Padding di dalam kotak */
+  margin-bottom: 15px; /* Jarak antara kotak-kotak */
+  border-radius: 8px; /* Sudut kotak membulat */
+}
+
+/* Properti teks global */
+.event-details h1 {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.event-details p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Properti kelas khusus */
+.custom-text {
+  font-size: 18px;
+  color: rgb(14, 14, 150);
+  font-weight: bold; /* Teks tebal */
+}
+
+.custom-text-small {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Teks tebal */
+}
+
+.event-details h3 {
+  border-bottom: 1px solid #5e5e5e; /* Garis bawah */
+}

@@ -1,0 +1,36 @@
+/* CSS untuk membuat tampilan yang menarik pada form */
+
+/* Memberikan padding dan margin yang sesuai */
+ion-content {
+  --ion-padding: 20px;
+}
+
+ion-card {
+  margin: 20px auto; /* Jarak antara card dengan tepi halaman */
+  max-width: 500px; /* Lebar maksimum card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan (shadow) */
+  border-radius: 8px; /* Memperhalus sudut card */
+}
+
+ion-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style untuk label pada input */
+ion-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style untuk input */
+ion-input,
+ion-select {
+  margin-bottom: 15px;
+}
+
+/* Style untuk button Kirim */
+ion-button {
+  margin-top: 15px;
+  font-weight: bold;
+}

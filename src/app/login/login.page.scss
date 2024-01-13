@@ -1,0 +1,74 @@
+ion-content {
+  position: relative;
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/originals/b2/35/7d/b2357d19807c32c8f1e29edefc8f0b9a.jpg'); /* Ganti dengan URL gambar latar belakang */
+  background-size: cover;
+  z-index: -1; /* Menempatkan di belakang lapisan login */
+}
+
+.login-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.1); /* Sesuaikan transparansi lapisan login */
+  border-radius: 10px;
+  max-width: 400px; /* Lebar maksimum form */
+  width: 100%; /* Sesuaikan dengan latar belakang */
+  backdrop-filter: blur(-10px); /* Efek blur pada lapisan login */
+}
+.input-item {
+  margin-bottom: 15px;
+}
+
+/* Mengatur transparansi pada ion-input */
+.input-item ion-input {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px; /* Atur sudut border input jika diperlukan */
+}
+
+
+/* Gaya-gaya lainnya untuk tata letak dan penampilan */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item {
+  margin-bottom: 15px;
+}
+
+.login-button {
+  margin-top: 10px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
+.round-image {
+  width: 150px; /* Sesuaikan ukuran gambar */
+  height: 150px; /* Sesuaikan ukuran gambar */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  border: 3px solid #fff; /* Menambahkan garis putih di sekitar gambar */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+  position: absolute; /* Menempatkan gambar di atas lapisan login */
+  top: -75px; /* Mengatur posisi atas gambar (sesuaikan jika perlu) */
+  left: 50%; /* Mengatur posisi horizontal gambar */
+  transform: translateX(-50%); /* Menggeser gambar ke tengah */
+}
